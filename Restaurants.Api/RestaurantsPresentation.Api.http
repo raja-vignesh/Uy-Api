@@ -1,0 +1,45 @@
+﻿@RestaurantsPresentation.Api_HostAddress = http://localhost:5031
+
+GET {{RestaurantsPresentation.Api_HostAddress}}/api/restaurants
+
+###
+
+GET {{RestaurantsPresentation.Api_HostAddress}}/api/restaurants/a448f447-2057-42be-9693-08dd09fce8ba
+
+###
+
+POST {{RestaurantsPresentation.Api_HostAddress}}/api/restaurants
+Content-Type: application/json
+
+{
+    "Name": "The Spicy Lounge",
+    "Description": "A contemporary restaurant offering Indian and international cuisines.",
+    "Category": "Indian",
+    "HasDelivery": true,
+    "ContactEmail": "infos@picelounge.com",
+    "ContactNumber": "1234567891",
+    "City": "San Francisco",
+    "Street": "456 Elm Street",
+    "PostalCode": "94103"
+}
+
+
+###
+
+
+###
+
+DELETE {{RestaurantsPresentation.Api_HostAddress}}/api/restaurants/851b14d9-1211-491d-6310-08dd0b1dd95b
+
+###
+
+PATCH {{RestaurantsPresentation.Api_HostAddress}}/api/restaurants/a448f447-2057-42be-9693-08dd09fce8ba
+Content-Type: application/json
+
+{
+  "name": "daddy Donaldy",
+  "description": "changed",
+  "hasDelivery": false
+}
+
+###
